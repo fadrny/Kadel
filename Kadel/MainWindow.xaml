@@ -1,0 +1,46 @@
+﻿<Window x:Class="Kadel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kadel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <UniformGrid x:Name="ug_hraci_plocha" Grid.Row="0">
+
+            </UniformGrid>
+            
+            <Grid Grid.Row="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btn_krok" Grid.Column="0" Content="krok" Click="btn_krok_Click" />
+                <Button x:Name="btn_otoc" Grid.Column="1" Content="otoc" />
+                <Button x:Name="btn_vypln" Grid.Column="2" Content="vypln" />
+                <Button x:Name="btn_vymaz" Grid.Column="3" Content="vymaz" />
+                <Button x:Name="btn_reset" Grid.Column="4" Content="reset" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
