@@ -13,7 +13,33 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0">
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <ScrollViewer Grid.Row="0">
+                <TextBox x:Name="tb_code" TextWrapping="Wrap" AcceptsReturn="True">
+                    
+                </TextBox>
+            </ScrollViewer>
+            <ScrollViewer Grid.Row="1">
+                <TextBlock x:Name="tv_code_output">
+                    
+                </TextBlock>
+            </ScrollViewer>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btn_spustit_kod" Grid.Column="0" Content="spustit" Click="btn_spustit_kod_Click" />
+                <Button x:Name="btn_ulozit_kod" Grid.Column="1" Content="uložit" />
+                <Button x:Name="btn_nacist_kod" Grid.Column="2" Content="načíst" />
+            </Grid>
         </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
@@ -36,10 +62,10 @@
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="btn_krok" Grid.Column="0" Content="krok" Click="btn_krok_Click" />
-                <Button x:Name="btn_otoc" Grid.Column="1" Content="otoc" />
-                <Button x:Name="btn_vypln" Grid.Column="2" Content="vypln" />
-                <Button x:Name="btn_vymaz" Grid.Column="3" Content="vymaz" />
-                <Button x:Name="btn_reset" Grid.Column="4" Content="reset" />
+                <Button x:Name="btn_otoc" Grid.Column="1" Content="otoc" Click="btn_otoc_Click" />
+                <Button x:Name="btn_vypln" Grid.Column="2" Content="vypln" Click="btn_vypln_Click" />
+                <Button x:Name="btn_vymaz" Grid.Column="3" Content="vymaz" Click="btn_vymaz_Click" />
+                <Button x:Name="btn_reset" Grid.Column="4" Content="reset" Click="btn_reset_Click" />
             </Grid>
         </Grid>
     </Grid>

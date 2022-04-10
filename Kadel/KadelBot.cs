@@ -37,6 +37,12 @@ namespace Kadel
             if (_direction > 3)
                 _direction = 0;
         }
+
+        public void ResetDirection()
+        {
+            _direction = 0;
+        }
+        
         public ImageBrush GetDirectionImage()
         {
             ImageBrush imgBrush = new ImageBrush();
